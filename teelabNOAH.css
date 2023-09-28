@@ -1,0 +1,364 @@
+.tren {
+    line-height: 0.5cm;
+    height: 0.5cm;
+    display: flex;
+    background-color:rgb(0, 0, 0);
+    list-style: none;
+    padding-left: 3cm;
+   }
+
+   .dautrang {
+       position: fixed;
+       bottom: 0px;
+       right: 5px;
+       background-color: transparent;  /* nền trong suốt */
+    }
+
+    div.dautrang a {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    div.dautrang:hover {
+        background-color: gray;
+    }
+
+   .trencung {
+       padding: 0 0 0 1cm;
+       color: white;
+   }
+
+   .menu {
+       margin-top: 1.6cm;
+       padding-left: 1.2cm;
+       height: 2cm;
+       position: relative;
+   }
+
+   section.menu ul li {
+       list-style: none;
+       margin-right: 1cm;
+       padding-bottom: 3px;
+       font-size: 20px;
+       font-weight: bolder;
+       position: relative;
+   }
+
+   section.menu ul li a {
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s;
+   }
+
+   section.menu ul li a:hover {
+       color: rgb(204, 0, 0);
+   }
+
+   section.menu ul li a.phantu::after { /* tạo phần tử giả, khởi đầu của hover */
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: rgb(204, 0, 0);
+    bottom: 0px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+   }
+
+   section.menu ul li a:hover::after {
+       width: 100%;
+   }
+   
+   .menu2 {
+    display: flex;
+    padding-left: 2cm;
+    width: 14cm;
+    position: relative;
+   }
+
+
+   .sub-menu {
+    display: none;
+    position: absolute;
+    margin-left: 4.2cm;
+    margin-top: 0.6cm;
+    }
+
+    .sub-menu li {
+    border: 1px solid black;
+    transition: 0.5s;
+    }
+
+    .sub-menu li:hover {
+        border: 3px solid rgb(204, 0, 0);
+    }
+
+    .sub-menu li a {
+    font-size: 20px;
+    background-color: rgb(241, 236, 236);
+    }
+
+    .menu2:hover ul {
+       display: block;
+   }
+
+    .logo {
+       max-width: 5cm;
+       width: auto;
+       height: auto ;
+       margin-left: 0.15cm;  
+       margin-top: 0.5cm;
+       transition: 0.4s;
+   }
+
+   .logo:hover {
+       transform: scale(1.05);
+   }
+
+   .timkiem {
+       margin-top: 1.8cm;
+       height: 1cm;
+       margin-left: 1px;
+   }
+
+   div.timkiem a {
+       font-size: 30px;
+       color: rgb(204, 0, 0);
+       transition: 0.5s;
+   }
+
+   div.timkiem a:hover {
+       color: blue;
+   }
+
+   .input {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 0px;
+    transition: 0.8s ease;
+    font-size: 18px;
+    font-weight: 440px;
+  }
+
+  .timkiem:hover input {
+    width: 210px;
+    height: 32.5px;
+    border-bottom: 2px solid black;
+    background-color: rgb(204, 204, 204);
+    border-top-right-radius: 0.5cm;
+    border-bottom-right-radius: 0.5cm;
+  }
+
+  .timkiem:hover input::placeholder { /* đổi màu input */
+      color: black;
+  }
+
+  div.timkiem input:focus { /* giữ thanh tìm kiếm */
+      width: 200px;
+      height: 32.5px;
+      border-top-right-radius: 0.5cm;
+      border-bottom-right-radius: 0.5cm;
+      background-color: blue;
+  }
+
+  .header {
+      display: flex;
+      background-color: rgb(241, 236, 236);
+      box-shadow: 0 3px 10px;
+  }
+
+  .giohang {
+      display: flex;
+      height: 1.1cm;
+      width: 4cm;
+      justify-content: center;
+      color: rgb(204, 0, 0);
+      font-weight: bold;
+      font-size: 22px;
+      margin-left: 1.4cm;
+      margin-top: 1.7cm;
+      position: relative;
+      margin-right: 1.2cm;
+      transition: 0.5s;
+  }
+
+  .giohang:hover {
+      color: blue;
+  }
+
+  div.giohang i {
+      font-size: 40px;
+  }
+
+  div.giohang a {
+      text-decoration: none;
+      margin-top: 0.3cm;
+      margin-left: 10px;
+      color: rgb(204, 0, 0);
+      transition: 0.5s;
+  }
+
+  div.giohang a:hover {
+      color: blue;
+  }
+
+  div.giohang::after { /* tạo phần tử giả, khởi đầu của hover */
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: blue;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+   }
+
+   div.giohang:hover:after {
+       width: 100%;
+   }
+
+   section div img {
+       width: 2cm;
+   }
+
+   .taikhoan {
+       display: flex;
+       margin-top: 1.5cm;
+       margin-left: 1.4cm;
+       height: 1cm;
+   }
+
+   .taikhoan a {
+       width: 3cm;
+       text-decoration: none;
+       font-size: 20px;
+       color: rgb(204, 0, 0);
+       transition: 0.3s;
+   }
+
+   .taikhoan a:hover {
+       color: blue;
+   }
+
+   footer div img {
+    width: 9.5cm; 
+    margin-left: 4cm;     
+}
+
+.lienhe ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.lienhe ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.lienhe ul li a:hover {
+  text-decoration: underline;
+}
+
+.mangxahoi ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 17px;
+}
+
+.mangxahoi ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mangxahoi ul li a:hover {
+  text-decoration: underline;
+}
+
+input {
+  width: 130%;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-bottom: 0.2cm;
+ }
+
+input[type=submit] {
+  width: 2cm;
+  background-color: rgb(204, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 12px;
+  transition: 0.3s;
+ }
+
+ input[type=submit]:hover {
+     background-color: blue;
+     color: white;
+ }
+
+ .footer2 {
+     display: flex;
+     background-image: url(hinhanh/backgroundfooter.png);
+ }
+
+ .duongdan {
+     background-color: rgb(202, 202, 202);
+ }
+
+ .duongdan p {
+     margin-left: 2cm;
+     font-weight: bolder;
+ }
+ 
+.anhsanpham {
+    width: 100%;
+}
+
+.themvaogiohang {
+    background-color: rgb(204, 0, 0); 
+    font-size: 23px; 
+    cursor: pointer; 
+    width: 6cm; 
+    height: 1cm;
+}
+
+.themvaogiohang:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.themvaogiohang a {
+    text-decoration: none; 
+    color: black; 
+    margin-left: 0.6cm;
+}
+
+.muangay {
+    background-color: rgb(204, 0, 0); 
+    font-size: 23px; 
+    cursor: pointer; 
+    width: 3.5cm; 
+    height: 1cm;
+    margin-left: 0.5cm;
+}
+
+.muangay:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.muangay a {
+    text-decoration: none; 
+    color: black; 
+    margin-left: 0.5cm;
+}
+
+.sanphamlienquan a {
+    padding-bottom: 1cm;
+}
